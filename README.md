@@ -1,7 +1,7 @@
 # UsersPermissions plugin for CakePHP
 The **UsersPermissions plugin** is for allowing admins to add user permissions for each module in Cakephp. It provides a basic interface to manage user permissions and check upon each request.
 It provides check box based user permissions in a form like magento. The plugin uses bootstrap by default but you can change that. 
-It will automatically get all controllers and actions from Your Cakephp application and a GUI you can select the permissions for all controller or actions inside a controller.
+It will automatically get all controllers and actions from Your Cakephp application and in a GUI you can select the permissions for all controller or actions inside a controller.
 
 ## Requirements
 
