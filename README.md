@@ -26,15 +26,13 @@ Or download the files and move to root/plugins and paste it there, Please rename
 	```
 	Plugin::load('UsersPermissions', ['routes' => true]);
 	```
-* Open console/terminal and run the following migration:
-	please make sure to load migration plugin
+* Open console/terminal and run the following migration,please make sure to load migration plugin first
 	```
 	bin/cake migrations migrate -p UsersPermissions
 	```
-	It will create a table named "user_permissions" in database.
+	It will create a table named "user_permissions" in database using default database connection configured in config/app.php of your cake php installation.
 
-* Change the route for your plugin GUI in plugins/UserPermissions/config/routes.php
-	By default it is domain.com/users-permissions
+* Change the route for your plugin GUI in **plugins/UserPermissions/config/routes.php** , By default it is domain.com/users-permissions
 
 	```
 	Router::plugin(
@@ -45,7 +43,9 @@ Or download the files and move to root/plugins and paste it there, Please rename
 	    }
 	);
 	```
+**Thats all your plugin has been installed, yay :)**
 
+### Usage
 
 ## Author
 
