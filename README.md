@@ -120,8 +120,8 @@ You can access the GUI if you have 'admin' role in Users table in user authentic
 	```
 *The plugin uses bootstrap as front-end styling but you can update the views. To do that you can update the following files.
 
-> plugins/UsersPermissions/src/template/Permissions/index.ctp
-> plugins/UsersPermissions/src/template/Permissions/userpermission.ctp
+	plugins/UsersPermissions/src/template/Permissions/index.ctp
+	plugins/UsersPermissions/src/template/Permissions/userpermission.ctp
 
 ## Author
 
