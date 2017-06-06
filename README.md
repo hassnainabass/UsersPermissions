@@ -137,3 +137,5 @@ This repository follows the [CakePhp Plugin Standards](https://book.cakephp.org/
 Copyright 2017-2020 [Hassnain Abass](https://www.linkedin.com/in/hussnain-abass-b041b578/). All rights reserved.
 
 Licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) License. Redistributions of the source code included in this repository must retain the copyright notice found in each file.
+
+**Goodluck And Happy Coding.**
