@@ -1,6 +1,7 @@
 # UsersPermissions plugin for CakePHP
 The **UsersPermissions plugin** is for allowing admins to add user permissions for each module in Cakephp. It provides a basic interface to manage user permissions and check upon each request.
-It provides check box based user permissions in a form like magento.
+It provides check box based user permissions in a form like magento. The plugin uses bootstrap by default but you can change that. 
+It will automatically get all controllers and actions from Your Cakephp application and a GUI you can select the permissions for all controller or actions inside a controller.
 
 ## Requirements
 
@@ -43,6 +44,10 @@ Or download the files and move to root/plugins and paste it there, Please rename
 	    }
 	);
 	```
+* Update call back url if user does not have permision for a particular action. To update the url, replace 'dashboard' in plugins/UsersPermissions/src/controller/component/ResourceComponent.php
+	```
+	return  $this->_registry->getController()->redirect('/dashboard');
+	```
 * Update composer, Go to the root directory for your cakephp installation and run the following command:
 	```
 	composer dumpautoload
@@ -50,15 +55,82 @@ Or download the files and move to root/plugins and paste it there, Please rename
 
 **Thats all your plugin has been installed, yay :)**
 
+You can access the GUI if you have 'admin' role in Users table in user authentication and authorization of cakephp application.
+
 ### Usage
+
+* If you want to load the plugin and permissions for all actions of all controllers and routes. Add the following code in cakephpapp/src/controller/AppController.php
+	```
+	public function initialize()
+    {
+        parent::initialize();
+        // Some code
+        // Load Resource Component
+        $this->loadComponent('UsersPermissions.Resource');
+    }
+
+    public function beforeFilter(Event $event)
+    {
+    	parent::beforeFilter($event);
+    	// Some code
+    	// Load permissions check function from Resource component
+        $this->Resource->checkPermision();
+    }
+
+	```
+
+* If you want to load the plugin and permissions for all actions of only one controllers. Add the following code in desired controller (same as above) cakephpapp/src/controller/ExampleController.php
+	```
+	public function initialize()
+    {
+        parent::initialize();
+        // Some code
+        // Load Resource Component
+        $this->loadComponent('UsersPermissions.Resource');
+    }
+
+    public function beforeFilter(Event $event)
+    {
+    	parent::beforeFilter($event);
+    	// Some code
+    	// Load permissions check function from Resource component
+        $this->Resource->checkPermision();
+    }
+
+	```
+* If you want to load the plugin and permissions for only one actions of only one controllers. Add the following code in desired controller and in the start of desired action/function in cakephpapp/src/controller/ExampleController.php
+	```
+	public function initialize()
+    {
+        parent::initialize();
+        // Some code
+        // Load Resource Component
+        $this->loadComponent('UsersPermissions.Resource');
+    }
+
+    public function exampleAction($param = null)
+    {
+    	// Load permissions check function from Resource component
+        $this->Resource->checkPermision();
+
+    	// Some code
+    	
+    }
+
+	```
+*The plugin uses bootstrap as front-end styling but you can update the views. To do that you can update the following files.
+	```
+	plugins/UsersPermissions/src/template/Permissions/index.ctp
+	plugins/UsersPermissions/src/template/Permissions/userpermission.ctp
+	```
 
 ## Author
 
-Developed by [Hassnain Abass](https://www.linkedin.com/in/hussnain-abass-b041b578/) - Senior Web Developer and [Freelancer](https://www.freelancer.com/)
+Developed by [Hassnain Abass](https://www.linkedin.com/in/hussnain-abass-b041b578/) - Senior Web Developer and [Freelancer](https://www.freelancer.com/u/Hussnain0163.html)
 
 ## Contributing
 
-This repository follows the [CakePhp Plugin Standard](https://book.cakephp.org/3.0/en/plugins.html). If you'd like to contribute new features, enhancements or bug fixes to the plugin, please feel free to pull.
+This repository follows the [CakePhp Plugin Standards](https://book.cakephp.org/3.0/en/plugins.html). If you'd like to contribute new features, enhancements or bug fixes to the plugin, please feel free to pull or report/open issues.
 
 ## License
 

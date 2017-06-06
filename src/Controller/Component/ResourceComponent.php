@@ -96,11 +96,8 @@ class ResourceComponent extends Component
       $userRole = $this->Auth->user('role');
 
       $permissionsTable = TableRegistry::get('UsersPermissions.Permissions');
-
-      // print_r($userId);
       
       $key = $this->request->params['controller'].'-'.$this->request->params['action'];
-      // print_r($key);
 
       $query = $permissionsTable->find('all', [
             'conditions' => ['Permissions.user_id' => $userId ],
@@ -122,7 +119,6 @@ class ResourceComponent extends Component
         $this->Flash->error(__('No permisions are defined for the '.$userName));
         return  $this->_registry->getController()->redirect('/dashboard');
       }
-      // die;
     }
     
 }

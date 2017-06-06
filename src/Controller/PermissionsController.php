@@ -101,6 +101,10 @@ class PermissionsController extends AppController
     	$this->set('result', $result);
     }
 
+    /**
+     * To check the plugin
+     * @return none
+     */
     public function check()
     {
     	$this->Resource->checkPermision();
