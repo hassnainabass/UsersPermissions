@@ -31,7 +31,7 @@ Or download the files and move to root/plugins and paste it there, Please rename
 	```
 	bin/cake migrations migrate -p UsersPermissions
 	```
-	It will create a table named "user_permissions" in database using default database connection configured in config/app.php of your cake php installation.
+	It will create a table named "user_permissions" in database using default database connection configured in config/app.php of your cakephp installation.
 
 * Change the route for your plugin GUI in **plugins/UserPermissions/config/routes.php** , By default it is domain.com/users-permissions
 
@@ -121,6 +121,7 @@ You can access the GUI if you have 'admin' role in Users table in user authentic
 *The plugin uses bootstrap as front-end styling but you can update the views. To do that you can update the following files.
 	```
 	plugins/UsersPermissions/src/template/Permissions/index.ctp
+	
 	plugins/UsersPermissions/src/template/Permissions/userpermission.ctp
 	```
 
