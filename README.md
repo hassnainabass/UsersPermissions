@@ -43,6 +43,11 @@ Or download the files and move to root/plugins and paste it there, Please rename
 	    }
 	);
 	```
+* Update composer, Go to the root directory for your cakephp installation and run the following command:
+	```
+	composer dumpautoload
+	```
+
 **Thats all your plugin has been installed, yay :)**
 
 ### Usage
