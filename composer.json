@@ -1,6 +1,6 @@
 {
-    "name": "hassnainTechKnox/UsersPermissions",
-    "description": "UsersPermissions plugin for CakePHP",
+    "name": "hassnainabass/UsersPermissions",
+    "description": "UsersPermissions plugin for CakePHP with GUI",
     "type": "cakephp-plugin",
     "require": {
         "php": ">=5.4.16",
