@@ -51,11 +51,11 @@ Or download the files and move to root/plugins and paste it there, Please rename
 
 Developed by [Hassnain Abass](https://www.linkedin.com/in/hussnain-abass-b041b578/) - Senior Web Developer and [Freelancer](https://www.freelancer.com/)
 
-##Contributing
+## Contributing
 
 This repository follows the [CakePhp Plugin Standard](https://book.cakephp.org/3.0/en/plugins.html). If you'd like to contribute new features, enhancements or bug fixes to the plugin, please feel free to pull.
 
-##License
+## License
 
 Copyright 2017-2020 [Hassnain Abass](https://www.linkedin.com/in/hussnain-abass-b041b578/). All rights reserved.
 
