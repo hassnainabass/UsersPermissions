@@ -7,19 +7,6 @@ use Cake\ORM\TableRegistry;
 use ReflectionClass;
 use ReflectionMethod;
 use OAuth;
-// Dear maintainer:
-// 
-// Once you are done trying to 'optimize' this component,
-// and have realized what a terrible mistake that was,
-// please increment the following counter as a warning
-// to the next guy:
-// 
-// total_hours_wasted_here = 42
-// 
-// Regards,
-// Hassnain Abass
-// 
-// PS : This is my component - CLOSE IT & STAY AWAY
 
 class ResourceComponent extends Component
 {
