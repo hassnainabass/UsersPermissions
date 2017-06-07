@@ -1,5 +1,5 @@
 {
-    "name": "hassnainabass/UsersPermissions",
+    "name": " hassnainabass/users-permissions",
     "description": "UsersPermissions plugin for CakePHP with GUI",
     "type": "cakephp-plugin",
     "require": {
