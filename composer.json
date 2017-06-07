@@ -17,6 +17,9 @@
     "require-dev": {
         "phpunit/phpunit": "*"
     },
+    "require": {
+        "hassnainabass/users-permissions": "*"
+    },
     "autoload": {
         "psr-4": {
             "UsersPermissions\\": "src"
