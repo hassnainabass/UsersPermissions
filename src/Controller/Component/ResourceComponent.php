@@ -27,8 +27,6 @@ class ResourceComponent extends Component
   	        'Component', 
   	        'AppController.php',
   	        'Api',
-  	        'AuditsController.php',
-  	        'AuditDeltasController.php',
             'ErrorController.php'
   	    ];
   	    foreach($files as $file){
