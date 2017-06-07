@@ -12,13 +12,11 @@
     ],
     "require": {
         "php": ">=5.4.16",
-        "cakephp/cakephp": "~3.0"
+        "cakephp/cakephp": "~3.0",
+        "hassnainabass/users-permissions": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
-    },
-    "require": {
-        "hassnainabass/users-permissions": "*"
     },
     "autoload": {
         "psr-4": {
