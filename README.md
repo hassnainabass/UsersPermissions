@@ -31,6 +31,22 @@ Or download the files and move to root/plugins and paste it there, Please rename
 	```
 	bin/cake migrations migrate -p UsersPermissions
 	```
+    Or create the following table in database:
+
+    ```
+    CREATE TABLE user_permissions (
+      id int(11) NOT NULL AUTO_INCREMENT,
+      user_id int(11) DEFAULT NULL,
+      permissions text DEFAULT NULL,
+      created_on timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+      updated_on date DEFAULT NULL,
+      PRIMARY KEY (id)
+    )
+    ENGINE = INNODB
+    AUTO_INCREMENT = 1
+    CHARACTER SET latin1
+    COLLATE latin1_swedish_ci;
+    ```
 	It will create a table named "user_permissions" in database using default database connection configured in config/app.php of your cakephp installation.
 
 * Change the route for your plugin GUI in **plugins/UserPermissions/config/routes.php** , By default it is domain.com/users-permissions
