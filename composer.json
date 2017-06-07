@@ -2,6 +2,14 @@
     "name": "hassnainabass/users-permissions",
     "description": "Users Permissions Management plugin for CakePHP with GUI",
     "type": "cakephp-plugin",
+    "keywords": ["cakephp","users","user permissions"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Hassnain Abass",
+            "email": "hussnain.abass@gmail.com"
+        }
+    ],
     "require": {
         "php": ">=5.4.16",
         "cakephp/cakephp": "~3.0"
