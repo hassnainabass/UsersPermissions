@@ -19,7 +19,7 @@ You can install this plugin into your CakePHP 3 application using [composer](htt
 The recommended way to install composer packages is:
 
 ```
-composer require  hassnainabass/users-permissions
+composer require  "hassnainabass/users-permissions:*"
 ```
 Or download the files and move to root/plugins and paste it there, Please rename the folder to **UsersPermissions**
 
