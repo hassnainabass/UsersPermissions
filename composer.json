@@ -1,6 +1,6 @@
 {
     "name": "hassnainabass/users-permissions",
-    "description": "UsersPermissions plugin for CakePHP with GUI",
+    "description": "Users Permissions Management plugin for CakePHP with GUI",
     "type": "cakephp-plugin",
     "require": {
         "php": ">=5.4.16",
